@@ -7,9 +7,16 @@
 body{
    background-color:#d9d9d9; 
 }
+.portfolioGallery{
+    background-color: white;
+}
 h1{
+    color: blue;
+}
+h2{
     color: blue;
 }
 p{
     color: blue;
+    font-size: 1.25em;
 }
