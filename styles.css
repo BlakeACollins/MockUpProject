@@ -4,7 +4,7 @@
   }
 
 img {
-    max-width:100%;
+    max-width: 100%;
   }
 .name{ 
     font-family:'Big Shoulders Text', sans-serif, arial;
@@ -28,7 +28,7 @@ body{
   padding:0;
   text-align:center;
   color: #3a3a3a;
-  background:#f7f5f0;
+  background:#f7f6f4;
   line-height:1.6; 
 }
 .portfolioGallery{
@@ -38,13 +38,17 @@ h1{
     color:#3a3a3a;
 }
 h2{
-    color:#3a3a3a;
+    color:#3D0A64;
     font-family: 'Oxygen Mono', sans-serif, arial;
 }
 h3{
     color:#3a3a3a;
     font-family:'Cinzel',sans-serif, arial;
     font-size: 1.25em;
+
+}
+.name{
+    color:salmon;
 }
 p{
     color:#3a3a3a;
@@ -64,10 +68,9 @@ li{
     font-size: 1.25em;
     list-style-type: none;
     display: inline;
-    padding: 12px;
-
+    padding: 10px;
+    
 }
-
 
 a {
     text-decoration:none;
@@ -79,11 +82,27 @@ a {
   }
 
 .main-nav {
+    background-color: darkgrey;
     text-align:right;
     display:block;
     list-style:none;
-    padding:20px;
-    margin-top:10px;
+    padding:5px;
+    position: fixed;
+    right:0;
+    border: 1px solid black;
+  }
+  .skillcard {
+    float: center;
+    margin: 30px;
+    padding: 20px 40px 40px;
+    max-width: 500px;
+    background: #fff;
+    border-bottom: 4px solid #ccc;
+    border-radius: 10px;
+    transition: all 1s;
+  }
+  .skillcard:hover {
+    border-color: royalblue;
   }
 .footer-nav{
     text-align:right;
@@ -105,69 +124,13 @@ a {
   Media Queries
   ==================*/
   
-  @media (min-width: 768px) {
-  
-  body {
-    padding-top: 68px;
-  }
-  
-  .main-header {
-    width: 100%;
-    top: 0;
-  }
-  
-  .container {
-    width:90%;
-    margin: 0 auto;
-  }
-  
-  .name,
-  .col {
-    float:left;
-  }
-  .profile {
-    margin-left:25%;
-    margin-right:25%;
-  }
+  @media (min-width: 768px) {}
   
   
-  .main-nav {
-    float:right;
-  }
+  
+  @media (min-width: 1024px){} 
   
   
-  .clearfix::after {
-    content:"";
-    display:table;
-    clear:both;
-  }
-  .wrap {
-    min-height: calc(120vh - 155.55px);
-  }
-  
-  }
-  
-  @media (min-width: 1024px) {
-  
-  .container {
-    width:80%;
-    max-width:1150px;
-  }
-  
-  .profile {
-    display:inline-block;
-  }
-  .primary,
-  .secondary,
-  .tertiary {
-    width: 33.3333%;  
-  }
-  
-  .main-footer {
-    margin-left: 10%;
-    margin-right:10%;
-  }
-  }
 
 
 
