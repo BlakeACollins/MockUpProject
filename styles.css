@@ -13,6 +13,7 @@ img {
 }
 .portfolioTitle{
     font-family: 'Bangers', sans-serif, arial;
+    padding-bottom: 1em;
 }
 body{ 
   margin:1em;
@@ -47,7 +48,8 @@ p{
     color:#3a3a3a;
     font-size: 1.35em;
     font-family:'PT Mono', sans-serif, arial;
-    margin-bottom:1.8em;
+    line-height: 1.5em;
+    
 }
 .mainContent{
     color:#3a3a3a;
@@ -145,6 +147,7 @@ a {
 
 .name{ 
       position: center;
+      padding-bottom: .5em;
   }
   .main-nav {
     background-color: lightgrey;
@@ -153,6 +156,7 @@ a {
     border: 1px solid black;
     margin-bottom: 25px;
     display:block;
+    line-height: 2em;
 }
 .nameBottom{
   float:left;
@@ -173,6 +177,7 @@ a {
 }
 .footerContent{
   position: center;
+  border-bottom: 1px solid black;
 }
 
 
