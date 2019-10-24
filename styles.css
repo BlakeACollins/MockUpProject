@@ -6,30 +6,20 @@
 img {
     max-width: 100%;
   }
-.name{ 
-    font-family:'Big Shoulders Text', sans-serif, arial;
-    font-size:3em;
-    margin:0px;
-    text-align: left;
-    padding-left: .5em;
-    padding-bottom: 1em;
-}
+
+
 .profileImage{
-    float: right;
-    padding-bottom:2em;
-    padding-left: 2em;
+   padding:.25em;
 }
 .portfolioTitle{
     font-family: 'Bangers', sans-serif, arial;
 }
-body{
-   
-  margin:0;
-  padding:0;
+body{ 
+  margin:1em;
   text-align:center;
   color: #3a3a3a;
   background:#f7f6f4;
-  line-height:1.6; 
+  line-height:1.5em; 
 }
 .portfolioGallery{
     background-color: white;
@@ -47,8 +37,11 @@ h3{
     font-size: 1.25em;
 
 }
-.name{
+.name,.nameBottom{
     color:salmon;
+    font-family:'Big Shoulders Text', sans-serif, arial;
+    font-size:4em;
+  
 }
 p{
     color:#3a3a3a;
@@ -63,13 +56,12 @@ p{
     margin-bottom:1.8em;
 
 }
-li{
+ul{
     font-family: 'Spectral SC', sans-serif, arial;
     font-size: 1.25em;
     list-style-type: none;
-    display: inline;
-    padding: 10px;
-    
+    margin:0;
+    padding:.25em;
 }
 
 a {
@@ -79,22 +71,14 @@ a {
   
  a:hover {
     color:royalblue;
+    
   }
 
-.main-nav {
-    background-color: darkgrey;
-    text-align:right;
-    display:block;
-    list-style:none;
-    padding:5px;
-    position: fixed;
-    right:0;
-    border: 1px solid black;
-  }
+
   .skillcard {
     float: center;
     margin: 30px;
-    padding: 20px 40px 40px;
+    padding: 20px 20px;
     max-width: 500px;
     background: #fff;
     border-bottom: 4px solid #ccc;
@@ -104,14 +88,93 @@ a {
   .skillcard:hover {
     border-color: royalblue;
   }
+  .skillList:hover {
+    transform: scale(1.05);
+    transition: 0.15s;
+  }
 .footer-nav{
     text-align:right;
     display:block;
     list-style:none;
-    padding:20px;
-    margin-top:10px;
-
+    padding: .25em;
 }
+
+
+  
+  /* ================
+  Media Queries
+  ==================*/
+
+  @media (min-width: 1024px){}
+  
+
+
+
+
+  @media (min-width: 768px) {
+
+    .portfolioGallery{
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .name{
+      position: center;
+    }
+    body{
+      padding: 10px; 
+      margin: 10px;
+    }
+    .name{
+      float: center;
+    }
+    .main-nav{
+      float: center;
+    }
+    
+
+
+  }
+
+
+
+
+@media (min-width: 320px){
+
+
+.name{ 
+      position: center;
+  }
+  .main-nav {
+    background-color: lightgrey;
+    text-align:center;
+    list-style:none;
+    border: 1px solid black;
+    margin-bottom: 25px;
+    display:block;
+}
+.nameBottom{
+  float:left;
+  margin-bottom: 0em;
+}
+.profileImage{
+  position:center;
+}
+.mainContent{
+  position: center;
+}
+.portfolioGallery{
+  width: 90%;
+  margin: 0 auto;
+}
+.skillcard{
+  position: center;
+}
+.footerContent{
+  position: center;
+}
+
 
 
 .clearfix::after {
@@ -119,21 +182,4 @@ a {
     display:table;
     clear:both;
   }
-  
-  /* ================
-  Media Queries
-  ==================*/
-  
-  @media (min-width: 768px) {}
-  
-  
-  
-  @media (min-width: 1024px){} 
-  
-  
-
-
-
-  
-
-  
+}
