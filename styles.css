@@ -107,84 +107,54 @@ a {
   Media Queries
   ==================*/
 
-  @media (min-width: 1024px){}
-  
 
 
 
+  @media (min-width: 320px){
 
-  @media (min-width: 768px) {
-
-    .portfolioGallery{
-        width: 90%;
-        margin: 0 auto;
-
+  .name{ 
+        position: center;
+        padding-bottom: .5em;
     }
 
-    .name{
-      position: center;
-    }
-    body{
-      padding: 10px; 
-      margin: 10px;
-    }
-    .name{
-      float: center;
-    }
-    .main-nav{
-      float: center;
-    }
-    
-
-
+    .main-nav {
+      background-color: lightgrey;
+      text-align:center;
+      list-style:none;
+      border: 1px solid black;
+      margin-bottom: 25px;
+      display:block;
+      line-height: 2em;
   }
-
-
-
-
-@media (min-width: 320px){
-
-
-.name{ 
-      position: center;
-      padding-bottom: .5em;
+  .nameBottom{
+    float:left;
+    margin-bottom: 0em;
   }
-  .main-nav {
-    background-color: lightgrey;
-    text-align:center;
-    list-style:none;
-    border: 1px solid black;
-    margin-bottom: 25px;
-    display:block;
-    line-height: 2em;
-}
-.nameBottom{
-  float:left;
-  margin-bottom: 0em;
-}
-.profileImage{
-  position:center;
-}
-.mainContent{
-  position: center;
-}
-.portfolioGallery{
-  width: 90%;
-  margin: 0 auto;
-}
-.skillcard{
-  position: center;
-}
-.footerContent{
-  position: center;
-  border-bottom: 1px solid black;
-}
+  .profileImage{
+    position:center;
+  }
+  .mainContent{
+    position: center;
+  }
+  .portfolioGallery{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .skillcard{
+    position: center;
+  }
+  .footerContent{
+    position: center;
+    border-bottom: 1px solid black;
+    }
+   
 
 
-
-.clearfix::after {
+  .clearfix::after {
     content:" ";
     display:table;
     clear:both;
   }
-}
+
+  }
+  }
