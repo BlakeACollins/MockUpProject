@@ -12,11 +12,11 @@ h2,
 p,
 li {
   color: black !important;
-  font-family: 'Big Shoulders Text', sans-serif, arial;
+  font-family: 'Big Shoulders Text', sans-serif, arial;
   font-size: 1.35em;
 }
 h3 {
-  font-family: 'Nunito', sans-serif, arial;
+  font-family: 'Nunito', sans-serif, arial;
   font-size: 1.5em;
 }
 
@@ -29,7 +29,7 @@ img:hover {
 
 ul {
   padding-left: 0;
-  font-family: 'Oxygen Mono', sans-serif, arial;
+  font-family: 'Oxygen Mono', sans-serif, arial;
 }
 
 
@@ -100,7 +100,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   font-weight: 700;
-  border-top: solid rgb(89, 88, 88) 1px;
+  border-top: 1px solid black;
   margin-top: 100px;
 }
 
@@ -115,15 +115,15 @@ footer {
 
 @media screen and (min-width: 768px) {
   .nav {
-    width: 490px;
     display: flex;
-    margin: auto;
+    
+    text-align: center;
   }
 
   .bio {
     position: absolute;
     left: 0;
-    font-size: 1em;
+    font-size: 1.25em;
   }
 
   img {
@@ -138,7 +138,7 @@ footer {
 
   .profile-pic {
     padding-top: 0;
-    width: 44%;
+    width: 40%;
     height: 100%;
   }
 
@@ -158,7 +158,7 @@ footer {
 
   .portolio-text {
     padding: 0 25px;
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   .contact-container {
@@ -170,7 +170,7 @@ footer {
   .contact-text {
     text-align: center;
     margin-bottom: 50px;
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   .top {
@@ -181,7 +181,7 @@ footer {
     display: flex;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    color: rgb(57, 57, 57);
+    color: navy;
   }
 
   .nav-footer li {
