@@ -76,7 +76,6 @@ a:hover {
 }
 
 .portfolio-container {
-  padding-top: 10%;
   padding-bottom: 10%;
 }
 
@@ -114,31 +113,28 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-    
-    text-align: center;
-  }
 
-  .bio {
-    position: absolute;
-    left: 0;
-    font-size: 1.25em;
+  .nav {
+    display: inline-flex;
   }
+	
+/* issue with getting the bio class to align left and the profile image to aling right.
+ Decided to mess with flex-directon more. Now bio and image are in position but image is tiny.*/
+
+
+.bio-container{
+ display: inline-flex;
+ flex-direction: row-reverse;
+}
 
   img {
     transition-duration: .5s;
   }
 
-  .section-1 {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 50px;
-  }
 
   .profile-pic {
     padding-top: 0;
-    width: 40%;
+    width: 90%;
     height: 100%;
   }
 
@@ -156,8 +152,10 @@ footer {
     max-width: 108%;
   }
 
-  .portolio-text {
-    padding: 0 25px;
+  #portfolio{
+    font-size:2em;
+  }
+  .portfolio-text {
     font-size: 1.5em;
   }
 
@@ -194,7 +192,10 @@ footer {
   }
 }
 
+
+
 @media screen and (min-width: 1024px) {
+
   body {
     padding-bottom: 0;
     padding-top: 25px;
@@ -211,7 +212,9 @@ footer {
   }
 
   .bio {
-      font-size: 1.75em;
+    text-align: left;
+    font-size: 1.5em;
+    width:50%;
   }
 
   .portfolio-container {
